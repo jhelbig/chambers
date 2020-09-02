@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    chambers (0.0.1)
-      rails (~> 6.0.3)
+    chambers (0.1.0)
+      rails (~> 6.0.3, >= 6.0.3.2)
 
 GEM
   remote: https://rubygems.org/
