@@ -1,5 +1,5 @@
 # Chambers
-Short description and motivation.
+Chambers is a p2p room automation service that will manage an entire room and all of the assets connected to it.
 
 ## Usage
 How to use my plugin.
