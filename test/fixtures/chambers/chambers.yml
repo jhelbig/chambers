@@ -1,0 +1,75 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  uuid: "eebe17b0-d5d9-0138-2f96-1cb6d0e24887"
+  name: "Master Bedroom"
+  host: "192.168.1.10"
+  active: true
+  level: 2
+  
+two:
+  uuid: "ef56e4b0-d5d9-0138-2f97-1cb6d0e24887"
+  name: "Jacks Bedroom"
+  host: "192.168.1.12"
+  active: true
+  level: 2
+
+three:
+  uuid: "efefb630-d5d9-0138-2f98-1cb6d0e24887"
+  name: "Master Ensuite"
+  host: "192.168.1.11"
+  active: true
+  level: 2
+  
+four:
+  uuid: "f0887b70-d5d9-0138-2f99-1cb6d0e24887"
+  name: "Upstairs Bathroom"
+  host: "192.168.1.13"
+  active: true
+  level: 2
+  
+five:
+  uuid: "f1213f10-d5d9-0138-2f9a-1cb6d0e24887"
+  name: "Lavatory"
+  host: "192.168.1.14"
+  active: true
+  level: 1
+
+six:
+  uuid: "f1ba09a0-d5d9-0138-2f9b-1cb6d0e24887"
+  name: "Laundry Room"
+  host: "192.168.1.15"
+  active: true
+  level: 0
+
+seven:
+  uuid: "f252d700-d5d9-0138-2f9c-1cb6d0e24887"
+  name: "Kitchen"
+  host: "192.168.1.16"
+  active: true
+  level: 1
+
+eight:
+  uuid: "f2eb9e90-d5d9-0138-2f9d-1cb6d0e24887"
+  name: "Garage"
+  host: "192.168.1.17"
+  active: true
+  level: 1
+
+nine:
+  uuid: "f3846b50-d5d9-0138-2f9e-1cb6d0e24887"
+  name: "Patio"
+  host: "192.168.1.18"
+  active: true
+  level: 0
+
+ten:
+  uuid: "f41d13e0-d5d9-0138-2f9f-1cb6d0e24887"
+  name: "Shop"
+  host: "192.168.1.19"
+  active: false
+  level: 0
