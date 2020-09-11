@@ -56,7 +56,7 @@ module Chambers
 
       # Only allow a trusted parameter "white list" through.
       def chamber_params
-        params.fetch(:chamber, {})
+        params.require(:chamber).permit(:name,:host,:level,:active)
       end
   end
 end
