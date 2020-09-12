@@ -103,6 +103,17 @@ module Chambers
         active: true,
         level: 1
       })
+      assert chamber.save
+      chamber = Chamber.new({
+        name: "Kitchen Sink2",
+        host: "192.168.1.30",
+        master: true,
+        slave: false,
+        secondary: false,
+        local: false,
+        active: true,
+        level: 1
+      })
       assert_not chamber.save
     end
 
@@ -110,6 +121,17 @@ module Chambers
       chamber = Chamber.new({
         name: "Kitchen Sink",
         host: "192.168.1.29",
+        master: false,
+        slave: true,
+        secondary: true,
+        local: false,
+        active: true,
+        level: 1
+      })
+      assert chamber.save
+      chamber = Chamber.new({
+        name: "Kitchen Sink2",
+        host: "192.168.1.30",
         master: false,
         slave: true,
         secondary: true,
@@ -133,7 +155,7 @@ module Chambers
       })
       assert_not chamber.save
     end
-
+    
     test "non-master chamber must be attributed as slave" do
       chamber = Chamber.new({
         name: "Kitchen Sink",
@@ -147,7 +169,7 @@ module Chambers
       })
       assert_not chamber.save
     end
-
+    
     test "local chamber can only be attributed once" do
       chamber = Chamber.new({
         name: "Kitchen Sink",
@@ -196,7 +218,7 @@ module Chambers
       })
       assert_not chamber.save
     end
-
+    
     test "chamber host can be IPv4" do
       chamber = Chamber.new({
         name: "Test Kitchen",
@@ -210,7 +232,7 @@ module Chambers
       })
       assert chamber.save
     end
-
+    
     test "chamber host can be IPv6" do
       chamber = Chamber.new({
         name: "Test Kitchen",
@@ -224,7 +246,7 @@ module Chambers
       })
       assert chamber.save
     end
-
+    
     test "chamber host can be domain" do
       chamber = Chamber.new({
         name: "Test Kitchen",

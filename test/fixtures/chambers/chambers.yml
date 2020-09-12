@@ -8,10 +8,10 @@ one:
   uuid: "eebe17b0-d5d9-0138-2f96-1cb6d0e24887"
   name: "Master Bedroom"
   host: "192.168.1.10"
-  master: true
-  slave: false
+  master: false
+  slave: true
   secondary: false
-  local: true
+  local: false
   active: true
   level: 2
   
@@ -21,7 +21,7 @@ two:
   host: "192.168.1.12"
   master: false
   slave: true
-  secondary: true
+  secondary: false
   local: false
   active: true
   level: 2
