@@ -12,9 +12,14 @@
   <tbody>
     <% @chambers.each do |chamber| %>
       <tr>
-        <td><%= link_to 'Show', chamber %></td>
-        <td><%= link_to 'Edit', edit_chamber_path(chamber) %></td>
-        <td><%= link_to 'Destroy', chamber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= chamber.id %></td>
+        <td><%= chamber.uuid %></td>
+        <td><%= chamber.name %></td>
+        <td><%= chamber.host %></td>
+        <td><%= chamber.level %></td>
+        <td><%= chamber.active %></td>
+        <td><%= chamber.created_at %></td>
+        <td><%= chamber.updated_at %></td>
       </tr>
     <% end %>
   </tbody>
