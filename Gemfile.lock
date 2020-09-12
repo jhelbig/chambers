@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     chambers (0.1.0)
+      jbuilder (~> 2.10.0)
       rails (~> 6.0.3, >= 6.0.3.2)
       uuid (>= 2.3.9)
       uuid_validator (~> 0.0.5)
@@ -72,6 +73,8 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.10.0)
+      activesupport (>= 5.0.0)
     loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)

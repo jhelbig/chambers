@@ -1,0 +1,1 @@
+json.(@chamber, :uuid, :name, :host, :level)
