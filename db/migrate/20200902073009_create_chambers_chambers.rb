@@ -4,6 +4,10 @@ class CreateChambersChambers < ActiveRecord::Migration[6.0]
       t.string :uuid, null: false
       t.string :name, null: false
       t.string :host, null: false
+      t.boolean :master, null: false, default: false
+      t.boolean :slave, null: false, default: false
+      t.boolean :secondary, null: false, default: false
+      t.boolean :local, null: false, default: false
       t.boolean :active, null: false, default: false
       t.integer :level, null: false, default: 1
       t.timestamps

@@ -8,6 +8,10 @@ one:
   uuid: "eebe17b0-d5d9-0138-2f96-1cb6d0e24887"
   name: "Master Bedroom"
   host: "192.168.1.10"
+  master: true
+  slave: false
+  secondary: false
+  local: true
   active: true
   level: 2
   
@@ -15,6 +19,10 @@ two:
   uuid: "ef56e4b0-d5d9-0138-2f97-1cb6d0e24887"
   name: "Jacks Bedroom"
   host: "192.168.1.12"
+  master: false
+  slave: true
+  secondary: true
+  local: false
   active: true
   level: 2
 
@@ -22,6 +30,10 @@ three:
   uuid: "efefb630-d5d9-0138-2f98-1cb6d0e24887"
   name: "Master Ensuite"
   host: "192.168.1.11"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 2
   
@@ -29,6 +41,10 @@ four:
   uuid: "f0887b70-d5d9-0138-2f99-1cb6d0e24887"
   name: "Upstairs Bathroom"
   host: "192.168.1.13"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 2
   
@@ -36,6 +52,10 @@ five:
   uuid: "f1213f10-d5d9-0138-2f9a-1cb6d0e24887"
   name: "Lavatory"
   host: "192.168.1.14"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 1
 
@@ -43,6 +63,10 @@ six:
   uuid: "f1ba09a0-d5d9-0138-2f9b-1cb6d0e24887"
   name: "Laundry Room"
   host: "192.168.1.15"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 0
 
@@ -50,6 +74,10 @@ seven:
   uuid: "f252d700-d5d9-0138-2f9c-1cb6d0e24887"
   name: "Kitchen"
   host: "192.168.1.16"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 1
 
@@ -57,6 +85,10 @@ eight:
   uuid: "f2eb9e90-d5d9-0138-2f9d-1cb6d0e24887"
   name: "Garage"
   host: "192.168.1.17"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 1
 
@@ -64,6 +96,10 @@ nine:
   uuid: "f3846b50-d5d9-0138-2f9e-1cb6d0e24887"
   name: "Patio"
   host: "192.168.1.18"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: true
   level: 0
 
@@ -71,5 +107,9 @@ ten:
   uuid: "f41d13e0-d5d9-0138-2f9f-1cb6d0e24887"
   name: "Shop"
   host: "192.168.1.19"
+  master: false
+  slave: true
+  secondary: false
+  local: false
   active: false
   level: 0
