@@ -1,0 +1,15 @@
+# komodo tool: Debug Output
+# =========================
+# auto_abbreviation: false
+# indent_relative: true
+# is_clean: true
+# keyboard_shortcut: Ctrl+Shift+V
+# language: Ruby
+# set_selection: true
+# treat_as_ejs: false
+# type: snippet
+# version: 1.1.6
+# =========================
+Rails.logger.debug("======================================================")
+Rails.logger.debug(!@#_anchorDEBUGHERE!@#_currentPos)
+Rails.logger.debug("======================================================")
