@@ -4,8 +4,6 @@ module Chambers
   
   class Chamber < ApplicationRecord
 
-    attr_reader :id
-
     validates :name, format: { with: /\A[a-zA-Z0-9\-\_\s]+\z/, message: "only allows alphanumeric, hypen(-), underscore(_), spaces( )" }
     validates :name, presence: true
     validates :name, uniqueness: true

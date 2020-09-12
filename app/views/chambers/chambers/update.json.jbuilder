@@ -1,1 +1,1 @@
-json.(@chamber, :id, :uuid, :name, :host, :active, :level)
+json.(@chamber, :uuid, :name, :host, :active, :level)

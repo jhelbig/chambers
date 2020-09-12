@@ -1,1 +1,1 @@
-json.array! @chambers, :id, :uuid, :name, :host, :active, :level
+json.array! @chambers, :uuid, :name, :host, :active, :level
