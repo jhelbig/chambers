@@ -13,7 +13,11 @@
   <%= form.text_field :name, placeholder: "Name" %><br />
   <%= form.text_field :host, placeholder: "Host" %><br />
   <%= form.number_field :level, placeholder: "Floor Level" %><br />
-  <%= form.check_box :active %><br />
+  Master: <%= form.check_box :master %><br />
+  Slave: <%= form.check_box :slave %><br />
+  Secondary: <%= form.check_box :secondary %><br />
+  Local: <%= form.check_box :local %><br />
+  Active: <%= form.check_box :active %><br />
 
 
   <div class="actions">
