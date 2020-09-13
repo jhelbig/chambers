@@ -54,12 +54,16 @@ module Chambers
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_chamber
-        @chamber = Chamber.find_by_uuid(params[:id])
+        if request.format.json?
+          @chamber = Chamber.find_by_uuid(params[:id])
+        else
+          @chamber = Chamber.find(params[:id])
+        end
       end
 
       # Only allow a trusted parameter "white list" through.
       def chamber_params
-        params.require(:chamber).permit(:name,:host,:level,:active)
+        params.require(:chamber).permit(:name,:host,:level,:master,:slave,:secondary,:local,:active)
       end
   end
 end
