@@ -35,6 +35,10 @@ module Chambers
         require 'openssl'
         rsa_private = OpenSSL::PKey::RSA.generate 4096
         self.public = rsa_private.public_key
+        sys_uuid = File.open('/sys/class/dmi/id/product_uuid', 'r').read().gsub(/\n/, '')
+        private = File.open("#{ENV['RSA_INSTALL_DIR']}/#{sys_uuid}", "wb")
+        private.puts rsa_private.to_s
+        private.close
       end
     end
 

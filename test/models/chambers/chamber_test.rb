@@ -272,9 +272,11 @@ module Chambers
         active: true,
         level: 1
       })
+      sys_uuid = File.open('/sys/class/dmi/id/product_uuid', 'r').read().gsub(/\n/, '')
       assert chamber.save
       chamber.reload
       assert_not chamber.key.nil?
+      assert File.exist?("#{ENV['RSA_INSTALL_DIR']}/#{sys_uuid}")
       assert chamber.key.chamber_uuid == chamber.uuid
     end
 
