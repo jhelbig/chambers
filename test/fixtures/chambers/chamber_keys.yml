@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+# Technically these keys will never work.  If there ever comes a time that they need to work,
+# a new "local" chamber will need to be created (eleven) and a real RSA keypair will need to
+# be generated and stored in the dummy app for testing.
+
+one:
+  chamber_uuid: "eebe17b0-d5d9-0138-2f96-1cb6d0e24887"
+  public: "c12085ec9adeb16b3679cac3cf0b2f91"
+  
+two:
+  chamber_uuid: "ef56e4b0-d5d9-0138-2f97-1cb6d0e24887"
+  public: "1fc08dd6d090a6ec22c9b07d05c35100"
+
+three:
+  chamber_uuid: "efefb630-d5d9-0138-2f98-1cb6d0e24887"
+  public: "7bdb68625ca0fbe09a35f4e4614377e3"
+  
+four:
+  chamber_uuid: "f0887b70-d5d9-0138-2f99-1cb6d0e24887"
+  public: "48ec12fb0c70551e58a937a6bfda7493"
+  
+five:
+  chamber_uuid: "f1213f10-d5d9-0138-2f9a-1cb6d0e24887"
+  public: "8684f3ef117d503a2f4de59966dfe6f0"
+
+six:
+  chamber_uuid: "f1ba09a0-d5d9-0138-2f9b-1cb6d0e24887"
+  public: "265fecb49dc2e771f200dfe46000418d"
+
+seven:
+  chamber_uuid: "f252d700-d5d9-0138-2f9c-1cb6d0e24887"
+  public: "4abd842ec26475159750f97558d141ab"
+
+eight:
+  chamber_uuid: "f2eb9e90-d5d9-0138-2f9d-1cb6d0e24887"
+  public: "7e9b420ac983f45ec1df91d305dda7a0"
+
+nine:
+  chamber_uuid: "f3846b50-d5d9-0138-2f9e-1cb6d0e24887"
+  public: "be89030d9e1f3f75d5cdd5efb3f63abd"
+
+ten:
+  chamber_uuid: "f41d13e0-d5d9-0138-2f9f-1cb6d0e24887"
+  public: "9f766e771f5a7bd404ec6bc659a9822a"
