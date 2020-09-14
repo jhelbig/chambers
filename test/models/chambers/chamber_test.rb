@@ -261,6 +261,25 @@ module Chambers
       assert chamber.save
     end
 
+    test "local chamber must have rsa key" do
+      chamber = Chamber.new({
+        name: "Test Kitchen",
+        host: "kitchen.chambers.house",
+        master: false,
+        slave: true,
+        secondary: false,
+        local: true,
+        active: true,
+        level: 1
+      })
+      sys_uuid = File.open('/sys/class/dmi/id/product_uuid', 'r').read().gsub(/\n/, '')
+      assert chamber.save
+      chamber.reload
+      assert_not chamber.key.nil?
+      assert File.exist?("#{ENV['RSA_INSTALL_DIR']}/#{sys_uuid}")
+      assert chamber.key.chamber_uuid == chamber.uuid
+    end
+
 
 
   end

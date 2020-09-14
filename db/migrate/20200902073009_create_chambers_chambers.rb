@@ -12,7 +12,7 @@ class CreateChambersChambers < ActiveRecord::Migration[6.0]
       t.integer :level, null: false, default: 1
       t.timestamps
     end
-    add_index :chambers_chambers, :uuid
+    add_index :chambers_chambers, :uuid, unique: true
     add_index :chambers_chambers, [:name, :host], unique: true
   end
 end

@@ -4,6 +4,8 @@ module Chambers
   
   class Chamber < ApplicationRecord
 
+    has_one :key, :class_name => "ChamberKey", primary_key: :uuid, foreign_key: :chamber_uuid
+
     validates :name, format: { with: /\A[a-zA-Z0-9\-\_\s]+\z/, message: "only allows alphanumeric, hypen(-), underscore(_), spaces( )" }
     validates :name, presence: true
     validates :name, uniqueness: true
@@ -18,6 +20,7 @@ module Chambers
     
     after_initialize :setUUID
     before_validation :setRole
+    after_save :setKey, if: :local
     
     private
 
@@ -56,6 +59,21 @@ module Chambers
       if self.slave
         self.master = false
       end
+      
+      if !self.master && !self.secondary
+        self.slave = true
+      end
+    end
+    
+    ##
+    # setKey will generate and set the RSA key used for
+    # communications between chamber nodes.
+    #
+    # If the record fails to create, the creation of
+    # the chamber record is also rolled back.
+
+    def setKey
+      ChamberKey.new({chamber_uuid: self.uuid}).save() unless self.key
     end
     
     ##
