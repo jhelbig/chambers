@@ -59,6 +59,10 @@ module Chambers
       if self.slave
         self.master = false
       end
+      
+      if !self.master && !self.secondary
+        self.slave = true
+      end
     end
     
     ##
