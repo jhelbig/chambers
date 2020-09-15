@@ -11,7 +11,6 @@ class Chambers::Test < ActiveSupport::TestCase
 
   test "SecurePayload encryption and decryption" do
     require 'openssl'
-    require 'basic_ssl'
     rsa_private = OpenSSL::PKey::RSA.generate 4096
     payload = { my_value: "is secret", please: "don't hax me", taze_me: false }.to_json
     enc_str = Chambers::SecurePayload.new(rsa_private.public_key.to_pem, payload).encrypt()
