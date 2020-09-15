@@ -17,6 +17,7 @@ module Chambers
 
     validates :chamber_uuid, presence: true
     validates :chamber_uuid, uniqueness: true
+    validates :chamber_uuid, uuid: true
     validates :public, presence: true
     validates :public, uniqueness: true
     #validates_associated :chamber
