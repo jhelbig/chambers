@@ -3,7 +3,6 @@ PATH
   specs:
     chambers (0.1.0)
       jbuilder (~> 2.10.0)
-      jwt (>= 2.2.2)
       openssl (~> 2.2)
       rails (~> 6.0.3, >= 6.0.3.2)
       sqlite3
@@ -78,7 +77,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
-    jwt (2.2.2)
     loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)

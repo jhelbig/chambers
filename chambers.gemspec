@@ -31,6 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "uuid_validator", "~> 0.0.5"
   spec.add_dependency "jbuilder", "~> 2.10.0"
   spec.add_dependency "openssl", "~> 2.2"
-  spec.add_dependency "jwt", ">= 2.2.2"
   
 end
